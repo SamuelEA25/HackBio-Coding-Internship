@@ -29,7 +29,7 @@ Run the script by following these steps:
 python script0.py
 ```
 
-This promt will execute the `script.py` file, displaying the team members details in the terminal.
+This promt will execute the `script0.py` file, displaying the team members details in the terminal.
 
 ## Output Sample
 
