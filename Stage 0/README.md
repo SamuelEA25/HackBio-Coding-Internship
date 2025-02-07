@@ -10,13 +10,13 @@ The script was designed to format each member's details using f-strings to guara
 
 A final print statement will print out a header showing the task stage and team name, concatenated (*+*) with the details of all the team members details in a numbering order.
 ## Stored Data for Each Team Member
--Name
--Slack username
--Email
--Hobby
--Country
--Discipline
--Preferred programming language
+- Name
+- Slack username
+- Email
+- Hobby
+- Country
+- Discipline
+- Preferred programming language
 ## Running the Script
 Run the script by executing this command in a Python environment
 `python print team_glycine.py`
