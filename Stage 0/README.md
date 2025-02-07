@@ -24,7 +24,8 @@ Run the script by executing this command in a Python environment
 
 ## Output Sample
 
-```python HackBio Internship Stage 0 Team Glycine 001 Members
+```python
+HackBio Internship Stage 0 Team Glycine 001 Members
 
 1. Name: Amaka Madubuike
    Slack username: AmakaMadubuike
