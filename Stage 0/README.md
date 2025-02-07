@@ -19,6 +19,7 @@ A final print statement will print out a header showing the task stage and team 
 - Preferred programming language
 ## Running the Script
 Run the script by executing this command in a Python environment
+
 `python print team_glycine.py`
 ## Output Sample
 
