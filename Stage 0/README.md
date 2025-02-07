@@ -20,10 +20,11 @@ A final print statement will print out a header showing the task stage and team 
 ## Running the Script
 Run the script by executing this command in a Python environment
 
-```python print team_glycine.py
+`python print team_glycine.py`
+
 ## Output Sample
 
-```pythonHackBio Internship Stage 0 Team Glycine 001 Members
+```python HackBio Internship Stage 0 Team Glycine 001 Members
 
 1. Name: Amaka Madubuike
    Slack username: AmakaMadubuike
@@ -31,7 +32,9 @@ Run the script by executing this command in a Python environment
    Hobby: Reading fiction and journaling
    Country: Nigeria
    Discipline: Physiology
-   Preferred Programming Language: R```
+   Preferred Programming Language: R
+---
+```
 
 ## Contributors
 | S/N | Name                  | GitHub                        | LinkedIn                        |
