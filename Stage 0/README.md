@@ -20,7 +20,7 @@ A final print statement will print out a header showing the task stage and team 
 ## Running the Script
 Run the script by following these steps:
 
-1. Download the [script0.py file](https://github.com/SamuelEA25/HackBio-Coding-Internship/blob/main/Stage%200/script0.py) to your local machine.
+1. Download the [script0.py](https://github.com/SamuelEA25/HackBio-Coding-Internship/blob/main/Stage%200/script0.py) file to your local machine.
 2. Open your terminal or command prompt.
 3. Locate the directory where the `script0.py` file is saved.
 4. Execute the command below:
@@ -47,10 +47,10 @@ HackBio Internship Stage 0 Team Glycine 001 Members
 ```
 
 ## Contributors
-| S/N | Name and Accounts                                                                                                                 |
-|-----|-----------------------------------------------------------------------------------------------------------------------------------|
-| 1   | Amaka Madubuike [GitHub](https://github.com/Ace-all) [LinkedIn](https://www.linkedin.com/in/amaka-madubuike-672370289/)           |
-| 2   | Balamirra Yegneswaran [GitHub](https://github.com/mirra-09) [LinkedIn](https://www.linkedin.com/in/balamirra/)                    |
-| 3   | Precious-Gift Alele [GitHub](https://github.com/PliciousG) [LinkedIn](https://www.linkedin.com/in/precious-giftalele/)            |
-| 4   | Samuel Eneojo Akor [GitHub](https://github.com/SamuelEA25) [LinkedIn](https://www.linkedin.com/in/samueleneojoakor/)              |
-| 5   | Danboyi Cynthia Ihotu [GitHub](https://github.com/Drihotu) [LinkedIn](https://www.linkedin.com/in/cynthia-danboyi-dvm-1514832b3/) |
+| S/N | Name and Accounts                                                                                                                   |
+|-----|-------------------------------------------------------------------------------------------------------------------------------------|
+| 1   | Amaka Madubuike  [GitHub](https://github.com/Ace-all)  [LinkedIn](https://www.linkedin.com/in/amaka-madubuike-672370289/)           |
+| 2   | Balamirra Yegneswaran  [GitHub](https://github.com/mirra-09)  [LinkedIn](https://www.linkedin.com/in/balamirra/)                    |
+| 3   | Precious-Gift Alele  [GitHub](https://github.com/PliciousG)  [LinkedIn](https://www.linkedin.com/in/precious-giftalele/)            |
+| 4   | Samuel Eneojo Akor  [GitHub](https://github.com/SamuelEA25)  [LinkedIn](https://www.linkedin.com/in/samueleneojoakor/)              |
+| 5   | Danboyi Cynthia Ihotu  [GitHub](https://github.com/Drihotu)  [LinkedIn](https://www.linkedin.com/in/cynthia-danboyi-dvm-1514832b3/) |
