@@ -33,9 +33,9 @@ HackBio Internship Stage 0 Team Glycine 001 Members
    Country: Nigeria
    Discipline: Physiology
    Preferred Programming Language: R
-   ...```
+...
 
-## Contributors
+**Contributors**
 | S/N | Name                  | GitHub                        | LinkedIn                        |
 |-----|-----------------------|-------------------------------|---------------------------------|
 | 1   | Amaka Madubuike       |                               |                                 |
