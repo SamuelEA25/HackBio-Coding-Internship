@@ -20,7 +20,8 @@ A final print statement will print out a header showing the task stage and team 
 ## Running the Script
 Run the script by executing this command in a Python environment
 
-`python print team_glycine.py`
+`python
+print team_glycine.py`        
 
 ## Output Sample
 
@@ -28,7 +29,7 @@ Run the script by executing this command in a Python environment
 HackBio Internship Stage 0 Team Glycine 001 Members
 
 1. Name: Amaka Madubuike
-   Slack username: AmakaMadubuike
+   Slack username: Amaka Madubuike
    Email: amakamadubuike2023@gmail.com
    Hobby: Reading fiction and journaling
    Country: Nigeria
