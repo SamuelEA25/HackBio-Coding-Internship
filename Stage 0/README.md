@@ -18,10 +18,18 @@ A final print statement will print out a header showing the task stage and team 
 - Discipline
 - Preferred programming language
 ## Running the Script
-Run the script by executing this command in a Python environment
+Run the script by following these steps:
 
-`python
-print team_glycine.py`        
+1. Download the `script.py` file to your local machine.
+2. Open your terminal or command prompt.
+3. Locate the directory where the `script.py` file is saved.
+4. Execute the command below:
+
+```bash
+python script.py
+```
+
+This promt will execute the `script.py` file, displaying the team members details in the terminal.
 
 ## Output Sample
 
