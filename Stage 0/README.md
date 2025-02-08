@@ -24,7 +24,9 @@ A final print statement will print out a header showing the task stage and team 
 Run the script by following these steps:
 
 1. Download the [script0.py](https://github.com/SamuelEA25/HackBio-Coding-Internship/blob/main/Stage%200/script0.py) file to your local machine.
+
 &nbsp;&nbsp;OR;&nbsp;&nbsp;
+
 Clone this repository to your local machine by running the command:
 
 ```bash
