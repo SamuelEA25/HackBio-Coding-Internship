@@ -55,4 +55,5 @@ HackBio Internship Stage 0 Team Glycine 001 Members
 | 4   | Samuel Eneojo Akor  [GitHub](https://github.com/SamuelEA25)  [LinkedIn](https://www.linkedin.com/in/samueleneojoakor/)              |
 | 5   | Danboyi Cynthia Ihotu  [GitHub](https://github.com/Drihotu)  [LinkedIn](https://www.linkedin.com/in/cynthia-danboyi-dvm-1514832b3/) |
 
-[Published LinkedIn post] (https://www.linkedin.com/posts/samueleneojoakor_hackbio-coding-bioinformatics-activity-7293923025329025025-Bmzg?utm_source=share&utm_medium=member_desktop&rcm=ACoAACjoAh8BXgE1MrOmM2AfGCF6GDMQCYdqf08)
+
+**Published LinkedIn post:** https://www.linkedin.com/posts/samueleneojoakor_hackbio-coding-bioinformatics-activity-7293923025329025025-Bmzg?utm_source=share&utm_medium=member_desktop&rcm=ACoAACjoAh8BXgE1MrOmM2AfGCF6GDMQCYdqf08
