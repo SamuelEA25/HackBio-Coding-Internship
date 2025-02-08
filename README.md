@@ -1,4 +1,4 @@
-# HackBio Internship 2025(Coding for Bio)
+# HackBio Internship 2025 (Coding for Bio)
 
 [HackBio's website](https://thehackbio.com/)
 
