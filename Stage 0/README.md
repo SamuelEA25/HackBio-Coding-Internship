@@ -49,7 +49,7 @@ HackBio Internship Stage 0 Team Glycine 001 Members
 ## Contributors
 | S/N | Name and Accounts                                                                                                                   |
 |-----|-------------------------------------------------------------------------------------------------------------------------------------|
-| 1   | Amaka Madubuike <space> [GitHub](https://github.com/Ace-all)  [LinkedIn](https://www.linkedin.com/in/amaka-madubuike-672370289/)           |
+| 1   | Amaka Madubuike  [GitHub](https://github.com/Ace-all)  [LinkedIn](https://www.linkedin.com/in/amaka-madubuike-672370289/)           |
 | 2   | Balamirra Yegneswaran  [GitHub](https://github.com/mirra-09)  [LinkedIn](https://www.linkedin.com/in/balamirra/)                    |
 | 3   | Precious-Gift Alele  [GitHub](https://github.com/PliciousG)  [LinkedIn](https://www.linkedin.com/in/precious-giftalele/)            |
 | 4   | Samuel Eneojo Akor  [GitHub](https://github.com/SamuelEA25)  [LinkedIn](https://www.linkedin.com/in/samueleneojoakor/)              |
