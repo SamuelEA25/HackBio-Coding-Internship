@@ -49,7 +49,7 @@ python --version
 python script0.py
 ```
 
-The above promt will execute the `script0.py` file, displaying the team members details in the command line interface of your local machine.
+The above promt will execute the `script0.py` file, displaying the team members details (as organised in the `team_glycine_details` dictionary) in the command line interface of your local machine.
 
 ## Output Sample
 
