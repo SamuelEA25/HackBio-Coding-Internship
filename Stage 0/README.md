@@ -2,13 +2,13 @@
 ## Objective
 This task involved using the data structure of either R or Python to create a simple script to organise the names, slack usernames, emails, hobbies, countries, disciplines, and preferred programming languages of all the members in my team. This script must exclude the use of functions, loops, conditionals, and complex concepts.
 
-Therefore, this repository contains a Python script which organises the details of team members of **Team Glycine 001** in the HacBio internship (Coding for Bio) in a systematic manner.
+Therefore, this repository contains a Python script which organises the details of team members of **Team Glycine 001** in the HackBio internship (Coding for Bio) in a systematic manner.
 ## Overview of the Project
-The details of each team member are stored in a nested dictionary named *team_glycine_details*. Unique keys (a, b, c, d, e) are assigned to each team member easily access their details. 
+The details of each team member are stored in a nested dictionary named *team_glycine_details*. Unique keys (a, b, c, d, e) are assigned to each team member to easily access their details. 
 
-The script was designed to format each member's details using f-strings to guarantee a structured presentation of the output. Numbers (1-5) were sequentially added before starting the details of all team members to order the team mates. A new line character (*\n*) was introduced after each details to introduce line breaks after each detail. 
+The script was designed to format each member's details using f-strings to guarantee a structured presentation of the output. Numbers (1-5) were sequentially added before starting the details of all team members to order the team mates. A new line character (*\n*) was introduced after each details to introduce line breaks. 
 
-A final print statement will print out a header showing the task stage and team name, concatenated (*+*) with the details of all the team members details in a numbering order.
+A final print statement will print out a header showing the task stage and team name, concatenated (*+*) with the details of all the team members details in a numbered order.
 ## Stored Data for Each Team Member
 - Name
 - Slack username
@@ -29,7 +29,7 @@ Run the script by following these steps:
 python script0.py
 ```
 
-This promt will execute the `script0.py` file, displaying the team members details in the terminal.
+The above promt will execute the `script0.py` file, displaying the team members details in the command line interface of your local machine.
 
 ## Output Sample
 
@@ -49,7 +49,7 @@ HackBio Internship Stage 0 Team Glycine 001 Members
 ## Contributors
 | S/N | Name and Accounts                                                                                                                   |
 |-----|-------------------------------------------------------------------------------------------------------------------------------------|
-| 1   | Amaka Madubuike  [GitHub](https://github.com/Ace-all)  [LinkedIn](https://www.linkedin.com/in/amaka-madubuike-672370289/)           |
+| 1   | Amaka Madubuike <space> [GitHub](https://github.com/Ace-all)  [LinkedIn](https://www.linkedin.com/in/amaka-madubuike-672370289/)           |
 | 2   | Balamirra Yegneswaran  [GitHub](https://github.com/mirra-09)  [LinkedIn](https://www.linkedin.com/in/balamirra/)                    |
 | 3   | Precious-Gift Alele  [GitHub](https://github.com/PliciousG)  [LinkedIn](https://www.linkedin.com/in/precious-giftalele/)            |
 | 4   | Samuel Eneojo Akor  [GitHub](https://github.com/SamuelEA25)  [LinkedIn](https://www.linkedin.com/in/samueleneojoakor/)              |
