@@ -22,12 +22,13 @@ Run the script by following these steps:
 
 1. Download the [script0.py](https://github.com/SamuelEA25/HackBio-Coding-Internship/blob/main/Stage%200/script0.py) file to your local machine.
 
-OR
+                                OR
 
 Clone this repository to your local machine by running the command:
 
 ```bash
-git clone https://github.com/SamuelEA25/HackBio-Coding-Internship```
+git clone https://github.com/SamuelEA25/HackBio-Coding-Internship
+```
 
 3. Open your terminal or command prompt.
 
@@ -36,7 +37,8 @@ git clone https://github.com/SamuelEA25/HackBio-Coding-Internship```
 5. Ensure Python is installed on your local machine. You can confirm this by running this command
 
 ```bash
-python --version```
+python --version
+```
 
 6. Execute the command below:
 
