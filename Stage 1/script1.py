@@ -7,35 +7,52 @@ Function 4: hamming_distance: Calculates the Hamming distance between two sets o
 """
 
 # Function 1: Translate DNA to Protein
-# Create a dictionary mapping codons to corresponding amino acids
+# Create a dictionary (codon_table) mapping RNA codons to corresponding amino acids (or 'Stop' for termination)
 codon_table = {
-    'AUG': 'Methionine', 'UUU': 'Phenylalanine', 'UUC': 'Phenylalanine', 'UUA': 'Leucine', 'UUG': 'Leucine',
-    'UCU': 'Serine', 'UCC': 'Serine', 'UCA': 'Serine', 'UCG': 'Serine', 'UAU': 'Tyrosine', 'UAC': 'Tyrosine',
-    'UGU': 'Cysteine', 'UGC': 'Cysteine', 'UGA': 'STOP', 'UGG': 'Tryptophan', 'CUU': 'Leucine', 'CUC': 'Leucine',
-    'CUA': 'Leucine', 'CUG': 'Leucine', 'CCU': 'Proline', 'CCC': 'Proline', 'CCA': 'Proline', 'CCG': 'Proline',
-    'CAU': 'Histidine', 'CAC': 'Histidine', 'CAA': 'Glutamine', 'CAG': 'Glutamine', 'CGU': 'Arginine',
-    'CGC': 'Arginine', 'CGA': 'Arginine', 'CGG': 'Arginine', 'AUU': 'Isoleucine', 'AUC': 'Isoleucine',
-    'AUA': 'Isoleucine', 'ACU': 'Threonine', 'ACC': 'Threonine', 'ACA': 'Threonine', 'ACG': 'Threonine',
-    'AAU': 'Asparagine', 'AAC': 'Asparagine', 'AAA': 'Lysine', 'AAG': 'Lysine', 'AGU': 'Serine', 'AGC': 'Serine',
-    'AGA': 'Arginine', 'AGG': 'Arginine', 'GUU': 'Valine', 'GUC': 'Valine', 'GUA': 'Valine', 'GUG': 'Valine',
-    'GCU': 'Alanine', 'GCC': 'Alanine', 'GCA': 'Alanine', 'GCG': 'Alanine', 'GAU': 'Aspartic Acid', 
-    'GAC': 'Aspartic Acid', 'GAA': 'Glutamic Acid', 'GAG': 'Glutamic Acid', 'GGU': 'Glycine', 'GGC': 'Glycine',
-    'GGA': 'Glycine', 'GGG': 'Glycine'
+    'UUU': 'Phe', 'UUC': 'Phe', 'UUA': 'Leu', 'UUG': 'Leu',
+    'UCU': 'Ser', 'UCC': 'Ser', 'UCA': 'Ser', 'UCG': 'Ser',
+    'UAU': 'Tyr', 'UAC': 'Tyr', 'UAA': 'Stop', 'UAG': 'Stop',
+    'UGU': 'Cys', 'UGC': 'Cys', 'UGA': 'Stop', 'UGG': 'Trp',
+
+    'CUU': 'Leu', 'CUC': 'Leu', 'CUA': 'Leu', 'CUG': 'Leu',
+    'CCU': 'Pro', 'CCC': 'Pro', 'CCA': 'Pro', 'CCG': 'Pro',
+    'CAU': 'His', 'CAC': 'His', 'CAA': 'Gln', 'CAG': 'Gln',
+    'CGU': 'Arg', 'CGC': 'Arg', 'CGA': 'Arg', 'CGG': 'Arg',
+
+    'AUU': 'Ile', 'AUC': 'Ile', 'AUA': 'Ile', 'AUG': 'Met',
+    'ACU': 'Thr', 'ACC': 'Thr', 'ACA': 'Thr', 'ACG': 'Thr',
+    'AAU': 'Asn', 'AAC': 'Asn', 'AAA': 'Lys', 'AAG': 'Lys',
+    'AGU': 'Ser', 'AGC': 'Ser', 'AGA': 'Arg', 'AGG': 'Arg',
+
+    'GUU': 'Val', 'GUC': 'Val', 'GUA': 'Val', 'GUG': 'Val',
+    'GCU': 'Ala', 'GCC': 'Ala', 'GCA': 'Ala', 'GCG': 'Ala',
+    'GAU': 'Asp', 'GAC': 'Asp', 'GAA': 'Glu', 'GAG': 'Glu',
+    'GGU': 'Gly', 'GGC': 'Gly', 'GGA': 'Gly', 'GGG': 'Gly'
 }
 
-#  Define a function that translates a given DNA sequence into a protein sequence
+# Define a function (dna_to_protein), which accepts a string (dna_sequence), and translates a given DNA sequence into a protein sequence.
 def dna_to_protein(dna_sequence):
-    mRNA = dna_sequence.replace('T', 'U') # Transcribe DNA sequence into mRNA by replacing T with U
-    codons = [mRNA[i:i+3] for i in range(0, len(mRNA), 3)] # Splice the mRNA into a set of three codons
-    # Translate codons into protein (amino acid sequence), initialising an empty protein sequence and building it with amino acid equivalence
-    protein = []
-    for codon in codons:
-        if codon in codon_table:
-            amino_acid = codon_table[codon]
-            if amino_acid == 'STOP':
-                break
-            protein.append(amino_acid)
-    return protein
+    mRNA = dna_sequence.replace('T', 'U')  # Transcribe DNA sequence into mRNA by replacing T with U
+    protein = ""  # Initialise an empty string to store the protein sequence after translation
+    
+    # Use a for loop to iterate through mRNA sequence in steps of 3 codons until the entire length of the mRNA sequence is covered
+    for i in range(0, len(mRNA), 3):  
+        codon = mRNA[i:i+3]  # Extract a three-base long codon
+        
+        if codon in codon_table:  # Check if codon exists in the codon_table
+            amino_acid = codon_table[codon]  # Get the amino acid that corresponds to the current codon in the codon_table
+            
+            if amino_acid == 'Stop':  # Stop codon encountered
+                break  # Stop the loop and terminate translation
+            
+            protein += amino_acid  # Add the translatded amino acid to protein string as the loop progresses
+    
+    return protein # Returns the final protein sequence upon loop completion (or stop codon interruption)
+
+""" Run the command prompt below to test the function above using an example DNA sequence (dna): 
+dna = "TCCAGATCCACAAGCCCAACTTTCAACAAA"
+print("Protein sequence:", dna_to_protein(dna))
+"""
 
 # Function 2: Generate Logistic Growth Curves
 def generate_logistic_growth_curves(num_curves=100, K=1000, P0=10, E=2.71828, max_time=100):
@@ -82,11 +99,6 @@ distance3 = hamming_distance("PreciousGift", "PreciousGift")
 distance4 = hamming_distance("SamuelEA", "Samuel18")
 distance5 = hamming_distance("DrIhotu89", "Cyndy8436")
 distance6 = hamming_distance("Saurabh", "Saurabh")
-
-
-# Example Usage
-dna = "ATGGCCATTGTAATGGGCCGAGGAG"
-print("Protein sequence:", dna_to_protein(dna))
 
 growth_curves = generate_logistic_growth_curves(num_curves=10, max_time=20)
 print("Generated logistic growth curves:", growth_curves[:2])  # Displaying first two
