@@ -1,4 +1,4 @@
-# Creating a Simple Script
+# Simple Script to Organise Team Details
 ## Objective
 This task involved using the data structure of either R or Python to create a simple script to organise the names, slack usernames, emails, hobbies, countries, disciplines, and preferred programming languages of all the members in my team. This script must exclude the use of functions, loops, conditionals, and complex concepts.
 
