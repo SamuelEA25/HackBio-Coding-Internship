@@ -49,10 +49,6 @@ def dna_to_protein(dna_sequence):
     
     return protein # Returns the final protein sequence upon loop completion (or stop codon interruption)
 
-""" Run the command prompt below to test the function above using an example DNA sequence (dna): 
-dna = "TCCAGATCCACAAGCCCAACTTTCAACAAA"
-print("Protein sequence:", dna_to_protein(dna))
-"""
 
 # Function 2: Generate Logistic Growth Curves
 def generate_logistic_growth_curves(num_curves=100, K=1000, P0=10, E=2.71828, max_time=100):
@@ -71,6 +67,7 @@ def generate_logistic_growth_curves(num_curves=100, K=1000, P0=10, E=2.71828, ma
         growth_curves.append(curve_data)
     return growth_curves
 
+
 # Function 3: Time to Reach 80% of Carrying Capacity
 def time_to_80_percent_growth(K, P, r, dt=0.01):
     t = 0
@@ -79,6 +76,7 @@ def time_to_80_percent_growth(K, P, r, dt=0.01):
         P += r * P * (1 - P / K) * dt
         t += dt
     return t
+
 
 # Function 4: Hamming Distance
 def hamming_distance(username1, username2):
@@ -91,11 +89,3 @@ def hamming_distance(username1, username2):
             distance += 1  # Increase the distance variable count by 1 for every difference found
 
     return distance
-
-# Call the function, assigning the specific Slack and Twitter usernames for each team member
-distance1 = hamming_distance("AmakaMadubuike", "AmakaMadubuike")
-distance2 = hamming_distance("Mirra", "mirr9")
-distance3 = hamming_distance("PreciousGift", "PreciousGift")
-distance4 = hamming_distance("SamuelEA", "Samuel18")
-distance5 = hamming_distance("DrIhotu89", "Cyndy8436")
-distance6 = hamming_distance("Saurabh", "Saurabh")
