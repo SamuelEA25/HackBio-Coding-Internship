@@ -99,12 +99,3 @@ distance3 = hamming_distance("PreciousGift", "PreciousGift")
 distance4 = hamming_distance("SamuelEA", "Samuel18")
 distance5 = hamming_distance("DrIhotu89", "Cyndy8436")
 distance6 = hamming_distance("Saurabh", "Saurabh")
-
-growth_curves = generate_logistic_growth_curves(num_curves=10, max_time=20)
-print("Generated logistic growth curves:", growth_curves[:2])  # Displaying first two
-
-K, P, r = 1000, 10, 0.1
-time_to_80 = time_to_80_percent_growth(K, P, r)
-print("Time to reach 80% of carrying capacity:", time_to_80)
-
-print("Hamming distance:", hamming_distance("AmakaMadubuike", "AmakaMadubuike"))
