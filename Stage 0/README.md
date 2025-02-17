@@ -53,7 +53,7 @@ The above promt will execute the `script0.py` file, displaying the team members 
 
 ## Output Sample
 
-```
+```text
 HackBio Internship Stage 0 Team Glycine 001 Members
 
 1. Name: Amaka Madubuike
