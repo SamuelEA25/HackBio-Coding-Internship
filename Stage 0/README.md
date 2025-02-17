@@ -69,11 +69,10 @@ HackBio Internship Stage 0 Team Glycine 001 Members
 ## Contributors
 | S/N | Name and Accounts                                                                                                                   |
 |-----|-------------------------------------------------------------------------------------------------------------------------------------|
-| 1   | Amaka Madubuike  [GitHub](https://github.com/Ace-all)  [LinkedIn](https://www.linkedin.com/in/amaka-madubuike-672370289/)           |
-| 2   | Balamirra Yegneswaran  [GitHub](https://github.com/mirra-09)  [LinkedIn](https://www.linkedin.com/in/balamirra/)                    |
-| 3   | Precious-Gift Alele  [GitHub](https://github.com/PliciousG)  [LinkedIn](https://www.linkedin.com/in/precious-giftalele/)            |
-| 4   | Samuel Eneojo Akor  [GitHub](https://github.com/SamuelEA25)  [LinkedIn](https://www.linkedin.com/in/samueleneojoakor/)              |
+| 1   | Samuel Eneojo Akor  [GitHub](https://github.com/SamuelEA25)  [LinkedIn](https://www.linkedin.com/in/samueleneojoakor/)              |
+| 2   | Amaka Madubuike  [GitHub](https://github.com/Ace-all)  [LinkedIn](https://www.linkedin.com/in/amaka-madubuike-672370289/)           |
+| 3   | Balamirra Yegneswaran  [GitHub](https://github.com/mirra-09)  [LinkedIn](https://www.linkedin.com/in/balamirra/)                    |
+| 4   | Precious-Gift Alele  [GitHub](https://github.com/PliciousG)  [LinkedIn](https://www.linkedin.com/in/precious-giftalele/)            |
 | 5   | Danboyi Cynthia Ihotu  [GitHub](https://github.com/Drihotu)  [LinkedIn](https://www.linkedin.com/in/cynthia-danboyi-dvm-1514832b3/) |
-
 
 **Published LinkedIn post:** https://www.linkedin.com/posts/samueleneojoakor_hackbio-coding-bioinformatics-activity-7293923025329025025-Bmzg?utm_source=share&utm_medium=member_desktop&rcm=ACoAACjoAh8BXgE1MrOmM2AfGCF6GDMQCYdqf08
