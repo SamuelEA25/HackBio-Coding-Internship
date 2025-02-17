@@ -1,12 +1,13 @@
 """
-This script contains four functions:
-1. dna_to_protein: Translates a DNA sequence into a protein sequence.
-2. generate_logistic_growth_curves: Generates multiple logistic growth curves.
-3. time_to_80_percent_growth: Determines the time to reach 80% of the carrying capacity.
-4. hamming_distance: Computes the Hamming distance between two strings.
+This script is composed of four functions:
+Function 1: dna_to_protein: Translates a DNA sequence into a protein sequence.
+Function 2: generate_logistic_growth_curves: Generates multiple logistic growth curves.
+Function 3: time_to_80_percent_growth: Determines the time to reach 80% of the carrying capacity.
+Function 4: hamming_distance: Calculates the Hamming distance between two sets of strings (usernames).
 """
 
 # Function 1: Translate DNA to Protein
+# Create a dictionary mapping codons to corresponding amino acids
 codon_table = {
     'AUG': 'Methionine', 'UUU': 'Phenylalanine', 'UUC': 'Phenylalanine', 'UUA': 'Leucine', 'UUG': 'Leucine',
     'UCU': 'Serine', 'UCC': 'Serine', 'UCA': 'Serine', 'UCG': 'Serine', 'UAU': 'Tyrosine', 'UAC': 'Tyrosine',
@@ -22,9 +23,11 @@ codon_table = {
     'GGA': 'Glycine', 'GGG': 'Glycine'
 }
 
+#  Define a function that translates a given DNA sequence into a protein sequence
 def dna_to_protein(dna_sequence):
-    mRNA = dna_sequence.replace('T', 'U')
-    codons = [mRNA[i:i+3] for i in range(0, len(mRNA), 3)]
+    mRNA = dna_sequence.replace('T', 'U') # Transcribe DNA sequence into mRNA by replacing T with U
+    codons = [mRNA[i:i+3] for i in range(0, len(mRNA), 3)] # Splice the mRNA into a set of three codons
+    # Translate codons into protein (amino acid sequence), initialising an empty protein sequence and building it with amino acid equivalence
     protein = []
     for codon in codons:
         if codon in codon_table:
@@ -63,8 +66,23 @@ def time_to_80_percent_growth(K, P, r, dt=0.01):
 # Function 4: Hamming Distance
 def hamming_distance(username1, username2):
     if len(username1) != len(username2):
-        raise ValueError("Strings must be of equal length to compute Hamming distance.")
-    return sum(c1 != c2 for c1, c2 in zip(username1, username2))
+        raise InvalidValueError("Strings must be of equal length to compute hamming distance.") # Verify that the two usernames are of equal length
+    distance = 0  # Ensures that the distance counter begins from zero
+    # Create a loop to compare characters (c) at the same position (index) between both usernames 
+    for c in range(len(username1)):
+        if username1[c] != username2[c]:
+            distance += 1  # Increase the distance variable count by 1 for every difference found
+
+    return distance
+
+# Call the function, assigning the specific Slack and Twitter usernames for each team member
+distance1 = hamming_distance("AmakaMadubuike", "AmakaMadubuike")
+distance2 = hamming_distance("Mirra", "mirr9")
+distance3 = hamming_distance("PreciousGift", "PreciousGift")
+distance4 = hamming_distance("SamuelEA", "Samuel18")
+distance5 = hamming_distance("DrIhotu89", "Cyndy8436")
+distance6 = hamming_distance("Saurabh", "Saurabh")
+
 
 # Example Usage
 dna = "ATGGCCATTGTAATGGGCCGAGGAG"
