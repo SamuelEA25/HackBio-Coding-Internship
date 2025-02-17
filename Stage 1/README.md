@@ -103,8 +103,13 @@ print(f"Saurabh vs Saurabh: {distance6}")
 
 ## 📌 Team Members
 **👤 [SamuelEA25](https://github.com/SamuelEA25)**
+
 **👤 [@Ace-all](https://github.com/Ace-all)**
+
 **👤 [@mirra-09](https://github.com/mirra-09)**
+
 **👤 [@PliciousG](https://github.com/PliciousG)**
+
 **👤 [Drihotu](https://github.com/Drihotu)**
+
 **👤 [Saurabh1234556](https://github.com/Saurabh1234556)**
