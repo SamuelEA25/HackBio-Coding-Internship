@@ -53,10 +53,10 @@ For manual installation of the dependencies, execute:
 pip install numpy pandas matplotlib seaborn scipy requests
 ```
 
-## Process of Result Generation
-The script performs the following key tasks:
+## Results Generation
+The script ([See script here](https://github.com/SamuelEA25/HackBio-Coding-Internship/blob/main/Stage_2/Transcriptomics/Script/transcriptomics_script.py)) performs the following key tasks:
 
-### **1. Data Loading & Preprocessing**
+### **1. Data Loading and Preprocessing**
 The dataset is loaded from the provided URL and processed to extract relevant gene expression information:
 ```python
 url = "https://gist.githubusercontent.com/stephenturner/806e31fce55a8b7175af/raw/1a507c4c3f9f1baaa3a69187223ff3d3050628d4/results.txt"
@@ -108,19 +108,19 @@ downregulated_genes.to_csv('downregulated_genes.csv', index=False)
 ```
 ## Results Interpretation
 
-The transcriptomic analysis performed in this study provides insights into the differential gene expression patterns between a diseased cell line and the same cell line treated with compound X. The key findings from the analysis are outlined below:
+The transcriptomic analysis performed in this study provides insights into the differential gene expression patterns between a diseased cell line and the same cell line treated with compound X. Below are the key findings from the RNASeq data analysis:
 
 ### 1. Volcano Plot Interpretation
 The volcano plot serves as a visual representation of differentially expressed genes, where:
 
 - **Upregulated Genes (Red Dots):** Genes with a log2 fold change > 1 and p-value < 0.01 indicate significant upregulation in response to compound X. These genes may be involved in pathways activated by the treatment, suggesting a potential therapeutic mechanism.
-- **Downregulated Genes (Blue Dots):** Genes with a log2 fold change < -1 and p-value < 0.01 represent significant downregulation, implying that these genes are suppressed under treatment conditions. This suppression could indicate pathways that compound X inhibits, either directly or indirectly.
-- **Non-significant Genes (Gray Dots):** Genes that do not meet the statistical threshold for significance, suggesting that their expression remains unchanged between treated and untreated conditions.
+- **Downregulated Genes (Blue Dots):** Genes with a log2 fold change < -1 and p-value < 0.01 represent significant downregulation, indicating that these genes are suppressed under treatment conditions. This suppression could be indicative of pathways which compound X directly or indirectly inhibits.
+- **Non-significant Genes (Gray Dots):** Genes that do not meet the statistical threshold for significance, indicating that their expression remains unchanged between treated and untreated conditions.
 
 [View Volcano Plot Here](https://github.com/SamuelEA25/HackBio-Coding-Internship/blob/main/Stage_2/Transcriptomics/Output/transcriptomics_volcano_plot.png)
 
 ### 2. Identification of Differentially Expressed Genes
-- The top **upregulated genes** are likely involved in cellular responses triggered by compound X, including stress response, metabolic reprogramming, or activation of signaling cascades relevant to disease mitigation.
+- The top **upregulated genes** could be involved in cellular responses triggered by compound X, including stress response, metabolic reprogramming, or activation of signaling cascades relevant to disease mitigation.
 - The top **downregulated genes** may be associated with disease-promoting processes that are repressed upon treatment, potentially revealing molecular targets modulated by compound X.
 
 [View Top 5 Upregulated Genes Here](https://github.com/SamuelEA25/HackBio-Coding-Internship/blob/main/Stage_2/Transcriptomics/Output/top_upregulated_genes.csv)
@@ -131,22 +131,22 @@ The volcano plot serves as a visual representation of differentially expressed g
 
 #### **Top 5 Upregulated Genes and Their Functions:**
 1. **DTHD1 (Death Domain Containing 1)** – Implicated in apoptotic signaling pathways, suggesting that compound X may influence cell survival mechanisms.
-2. **EMILIN2 (Elastin Microfibril Interfacer 2)** – Plays a role in extracellular matrix organization and cell adhesion, potentially indicating an impact on tissue remodeling.
-3. **PI16 (Peptidase Inhibitor 16)** – Involved in immune response regulation and inhibition of proteolytic activity, which may suggest a role in modulating inflammatory responses.
-4. **C4orf45 (Chromosome 4 Open Reading Frame 45)** – A poorly characterized gene, but its upregulation may indicate involvement in an unrecognized regulatory process affected by the treatment.
-5. **FAM180B (Family With Sequence Similarity 180 Member B)** – Its function remains largely unknown, though its expression changes could suggest relevance in disease-associated pathways.
+2. **EMILIN2 (Elastin Microfibril Interfacer 2)** – Involved in extracellular matrix organisation and cell adhesion, potentiating tissue remodeling.
+3. **PI16 (Peptidase Inhibitor 16)** – Facilitates the regulation of immune response and inhibition of proteolytic activity, suggesting inflammatory response modulation.
+4. **C4orf45 (Chromosome 4 Open Reading Frame 45)** – Although poorly characterised, its upregulation could indicate involvement in an unrecognised regulatory process affected by the treatment.
+5. **FAM180B (Family With Sequence Similarity 180 Member B)** – While its function remains largely unknown, its expression changes could suggest relevance in disease-associated pathways.
 
 #### **Top 5 Downregulated Genes and Their Functions:**
 1. **TBX5 (T-Box Transcription Factor 5)** – A key regulator of cardiac and limb development, suggesting that compound X might modulate developmental or repair-associated pathways.
 2. **IFITM1 (Interferon Induced Transmembrane Protein 1)** – Plays a role in innate immunity, particularly antiviral responses, implying that compound X may suppress immune activation.
 3. **TNN (Tenascin N)** – An extracellular matrix glycoprotein involved in tissue remodeling and neuronal development, which may indicate reduced fibrosis or structural reorganization under treatment.
-4. **COL13A1 (Collagen Type XIII Alpha 1 Chain)** – A structural component of the extracellular matrix, its downregulation could be associated with changes in cell adhesion or tissue integrity.
+4. **COL13A1 (Collagen Type XIII Alpha 1 Chain)** – A structural component of the extracellular matrix, annd its downregulation could be associated with changes in cell adhesion or tissue integrity.
 5. **IFITM3 (Interferon Induced Transmembrane Protein 3)** – Similar to IFITM1, it is involved in immune defense, and its suppression may indicate modulation of inflammatory signaling.
 
 #### **Biological Insights from Gene Expression Changes:**
 Functional annotations retrieved from the Ensembl database ([View Gene Functions for Top 5 Upregulated and Downregulated Genes Here](https://github.com/SamuelEA25/HackBio-Coding-Internship/blob/main/Stage_2/Transcriptomics/Output/merged_gene_functions.csv)) provide insights into the biological roles of the top differentially expressed genes:
 
-- **Upregulated genes** suggest a response to **cellular stress, extracellular matrix remodeling, and immune modulation**, which could be linked to the therapeutic action of compound X.
-- **Downregulated genes** predominantly include **immune-related and extracellular matrix components**, suggesting that compound X may suppress inflammation and tissue remodeling processes commonly associated with disease progression.
+- **Upregulated genes** suggest a response to cellular stress, extracellular matrix remodeling, and immune modulation, which could be linked to the therapeutic mechanism of compound X.
+- **Downregulated genes** predominantly include immune-related and extracellular matrix components, suggesting that compound X may suppress inflammation and tissue remodeling processes commonly associated with disease progression.
 
-These functional insights are valuable for understanding the mechanism of action of compound X, identifying potential therapeutic targets, and guiding further experimental validation.
+In conclusion, these functional insights are valuable for understanding the mechanistic approach of compound X, identifying potential therapeutic targets, and guiding further experimental validation and progression.
